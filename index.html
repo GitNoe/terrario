@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrario</title>
+    <link rel="favicon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<script src="./js/script.js" defer></script> </--se pone el defer para que el js no actúe hasta que se carga todo-->
+</head>
+<body> <!--crear la estructura con las abreviaturas de emmet-->
+
+    <h1>EL TERRARIO VIRTUAL</h1>
+
+    <!-- div#page>div.container#left-container+div.container#right-container-->
+
+    <div id="page">
+
+        <!--poner el mismo alt (cualquiera) para todas las imágenes con multicursos (control+d)-->
+
+        <div class="container" id="left-container">
+            <!--div.plant-holder*7>img.plant#plant$--> 
+            <div class="plant-holder"><img src="./img/plant1.png" alt="plantita" class="plant" id="plant1"></div>
+            <div class="plant-holder"><img src="./img/plant2.png" alt="plantita" class="plant" id="plant2"></div>
+            <div class="plant-holder"><img src="./img/plant3.png" alt="plantita" class="plant" id="plant3"></div>
+            <div class="plant-holder"><img src="./img/plant4.png" alt="plantita" class="plant" id="plant4"></div>
+            <div class="plant-holder"><img src="./img/plant5.png" alt="plantita" class="plant" id="plant5"></div>
+            <div class="plant-holder"><img src="./img/plant6.png" alt="plantita" class="plant" id="plant6"></div>
+            <div class="plant-holder"><img src="./img/plant7.png" alt="plantita" class="plant" id="plant7"></div>
+        </div>
+
+        <div class="container" id="right-container">
+            <!--div.plant-holder*7>img.plant#plant$--> <!--los ids se cambian manualmente-->
+            <div class="plant-holder"><img src="./img/plant8.png" alt="plantita" class="plant" id="plant8"></div>
+            <div class="plant-holder"><img src="./img/plant9.png" alt="plantita" class="plant" id="plant9"></div>
+            <div class="plant-holder"><img src="./img/plant10.png" alt="plantita" class="plant" id="plant10"></div>
+            <div class="plant-holder"><img src="./img/plant11.png" alt="plantita" class="plant" id="plant11"></div>
+            <div class="plant-holder"><img src="./img/plant12.png" alt="plantita" class="plant" id="plant12"></div>
+            <div class="plant-holder"><img src="./img/plant13.png" alt="plantita" class="plant" id="plant13"></div>
+            <div class="plant-holder"><img src="./img/plant14.png" alt="plantita" class="plant" id="plant14"></div>
+        </div>
+
+        <!--div#terrarium-->
+        <div id="terrarium">
+            <!--div.jar-top+div.jar-wall+div.jar-dirt+div.jar-bottom-->
+            <div class="jar-top"></div>
+            <div class="jar-wall">
+                <!--div.jar-glossy-*2-->
+                <div class="jar-glossy-long"></div>
+                <div class="jar-glossy-short"></div>
+            </div>
+            <div class="jar-dirt"></div>
+            <div class="jar-bottom"></div>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script> <!--al poner aquí el script no hace falta el defer-->
+</body>
+</html>

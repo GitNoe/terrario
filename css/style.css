@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/*PAGE*/
+h1{
+    color:darkred;
+    text-align: center;
+}
+
+/*COLUMNAS EXTREMOS*/
+.container{
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    background-color:palevioletred;
+    top: 0px;
+    padding: 10px;
+}
+
+#left-container{
+    left:0px;
+}
+#right-container{
+    right:0px;
+}
+
+.plant-holder{
+    position: relative;
+    height: 13%;
+    left: -10px;
+}
+.plant{
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+/*COLUMNA CENTRO - #terrarium*/
+.jar-walls{
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    background:coral;
+    border-radius: 1rem;
+    bottom: 0.5%;
+    left: 20%;
+	opacity: 0.5;
+    z-index: 1;
+}
+.jar-top{
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    background: orangered;
+    bottom: 80.5%;
+    left: 25%;
+	opacity: 0.7;
+    z-index: 1;
+}
+.jar-bottom{
+    position: absolute;
+    width: 50%;
+    height: 1%;
+    background:orangered;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}
+.jar-dirt{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    background:saddlebrown;
+	border-radius: 0 0 1rem 1rem; /*arriba derecha abajo izquierda*/
+	bottom: 1%;
+	left: 20%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+/*jar-walls*/
+.jar-glossy-long{
+    position: absolute;
+    width: 3%;
+    height: 20%;
+    background-color: orangered;
+	border-radius: 2rem;
+	bottom: 20%;
+	left: 25%;
+}
+.jar-glossy-short{
+    position: absolute;
+    width: 3%;
+    height: 5%;
+    background-color: orangered;
+	border-radius: 2rem;
+	bottom: 45%;
+	left: 25%;
+}
